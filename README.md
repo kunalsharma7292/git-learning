@@ -1,7 +1,7 @@
 # Basic Git Commands
 
 a)  Check git installed version
-    git version
+        git version
 
 b) Configure Git properties (user name and email)
     Configure UserName
