@@ -83,6 +83,9 @@
 - Show changes in a stash  
 `git stash show`
 `git stash show <stash@{index}>`
+- Create and pop stash changes in a new branch  
+`git stash branch <new_branch_name>`  
+    - action performed by above command: create and checkout of new branch and pop(apply and drop)last stash changes
 
 ### 11. Tagging - (mark significant event or milestones in the repo -- Tag are labels only that can be applied to any commit in history)
 - Creating and attach lightweight tag with Head commit: `git tag <tag_name>`
