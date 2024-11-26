@@ -137,3 +137,4 @@
 - Compare local repo branch with remote repo branch : `git diff <local_repo_branch> origin/<remote_repo_branch>`
 
 > **Note :** difftool must be configured first to use difftool command otherwise git prompts to open OS default difftool
+
