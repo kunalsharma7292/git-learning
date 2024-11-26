@@ -109,7 +109,7 @@
 `git push origin <branch_name> <tag_name>`
 
 - Push all tags to remote repo  
-`git push origin <branch> --tags`
+`git push origin <branch_name> --tags`
 
 - Delete tag from remote repo : `git push origin :<tag_name>`
     - tells git to push nothing against this tag in remote repo - git hub will delete the tag - refer release window on git hub
