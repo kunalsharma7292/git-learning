@@ -120,4 +120,18 @@
 - Rebase changes of a branch on current branch : `git rebase <branch_name>`
 - Abort Rebase in case on conflicts : `git rebase --abort`
 - Continue Rebase (used when conflicts have been resolved - if any present) - `git rebase --continue`
-- Pull with rebase : `git pull --rebase origin <branch_name>` 
+- Pull with rebase : `git pull --rebase origin <branch_name>`
+
+### 13. Compare Changes
+- List differences b/w working directory and staging area code. (All changes will be listed)  
+`git diff`
+- List differences b/w working directory and last-commit / head : `git diff HEAD`
+- List differences b/t Last Commit / head and staging area : `git diff --staged HEAD`
+- List differences using diff tool like p4merge  
+`git difftool` , `git difftool HEAD` , `git difftool --staged HEAD`
+- List differences of a particular file : `git diff -- <file_name>`
+- Compare commits, branches and tags  
+`git diff <commid_id1> <commit_id2>`, `git diff <branch1> <branch2>`, `git diff <tag1> <tag2>`
+- Compare local repo branch with remote repo branch : `git diff <local_repo_branch> origin/<remote_repo_branch>`
+
+> **\*Note :** difftool must be configured first to use difftool command otherwise git prompts to open OS default difftool
