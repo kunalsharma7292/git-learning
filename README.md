@@ -8,7 +8,7 @@
 - Configure Default repo branch : `git config --global init.defaultbranch "Default_Branch_Name"`
 - List properties : `git config --global --list`
 
-> **\*Note :** global flag sets properties globally in ~/.gitconfig file
+> **Note :** global flag sets properties globally in ~/.gitconfig file
 
 ### 3. Creating or initializing a local repo
 - Initializing local repo : `git init <local_repo_name>`
@@ -18,7 +18,7 @@
 - `git clone <remote_repo_url>`
     - *e.g.:* `git clone https://github.com/kunalsharma7292/git-learning.git`
     
-> **\*Note :** clone command automatically establishes a relationship with remote repo and names that reference "origin"
+> **Note :** clone command automatically establishes a relationship with remote repo and names that reference "origin"
 
 
 ### 5. Add/Attach Remote repo to/with a local Repo
@@ -40,13 +40,13 @@
 - Push changes to a particular remote branch : `git push origin <local_branch>:<remote_branch>`
 - Push changes and set local branch to track remote repo branch i.e set remote as upstream branch : `git push -u origin <branch_name>`
 
-> **\*Note :** if local branch is set to track remote repo branch - then we can directly use git pull and push commands without specifying origin refernce and branch name.  
+> **Note :** if local branch is set to track remote repo branch - then we can directly use git pull and push commands without specifying origin refernce and branch name.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g.: If remote is set as upstream.  Use: `git pull`, `git push`
 
 ### 8. Fetch new commits/branches/tags from remote repo and update references for remote-tracking branches(e.g., origin/main) but do not merge in changes in working directory
 - `git fetch origin <branch_name>`
 
-> **\*Note :** pull = fetch + merge (pull automatically merges remote changes in working directory directory)
+> **Note :** pull = fetch + merge (pull automatically merges remote changes in working directory directory)
 
 ### 8. Discarding files or resetting changes from Staging area and working directory
 - Unstage changes from Staging area : `git reset HEAD <file_name>`
@@ -134,4 +134,4 @@
 `git diff <commid_id1> <commit_id2>`, `git diff <branch1> <branch2>`, `git diff <tag1> <tag2>`
 - Compare local repo branch with remote repo branch : `git diff <local_repo_branch> origin/<remote_repo_branch>`
 
-> **\*Note :** difftool must be configured first to use difftool command otherwise git prompts to open OS default difftool
+> **Note :** difftool must be configured first to use difftool command otherwise git prompts to open OS default difftool
