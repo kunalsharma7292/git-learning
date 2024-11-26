@@ -90,23 +90,18 @@
 - Delete a tag : `git tag --delete <tag_name>`
 - Show changes in associated commit (We can use tag name as refernce in other git commands like diff command as well)  
 `git show <tag_name>`
-    
 - Create Annotated tag (Similar to light-weight tag - contains additional info associated with tag - in particular a message similar to a commit message (for eg: release notes/docs))  
 `git tag -a <tag_name>`
 `git tag <tag-name> -m "<Message- Release Docs>"`
-
 - Tag a particular commit : `git tag -a <tag_name> <commit_id>`
 - Update a tag : 
 `git tag <tag_name> -fm "<new_message>"` -> (Annotated-Tag - message provided)  
 `git tag <tag_name> -f <new_commit_id> -m "<new_message>"` -> (Annotated tag - message provided)  
 `git tag <tag_name> -f` -> (Annotated to lightweight tag)
-    
 - Push a tag to remote repo (pushes all commits upto this tag to remote repo)  
 `git push origin <tag_name>`
-
 - Push all tags to remote repo  
 `git push origin <branch> --tags`
-
 - Delete tag from remote repo : `git push origin :<tag_name>`
     - tells git to push nothing against this tag in remote repo - git hub will delete the tag - refer release window on git hub
     - corresponding commits/changes will not be removed from github
