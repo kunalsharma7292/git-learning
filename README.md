@@ -79,13 +79,12 @@
 - Apply a particular stash : `git apply <stash@{index}>`
 - Drop a particular stash : `git drop <stash@{index}>`
 - Remove all stash and empty stash list : `git stash clear`
-- Apply stash in another branch : `git stash apply`
 - Show changes in a stash  
 `git stash show`
 `git stash show <stash@{index}>`
 - Create and pop stash changes in a new branch  
 `git stash branch <new_branch_name>`  
-    - action performed by above command: create and checkout of new branch and pop(apply and drop)last stash changes
+    - action performed by above command: create and checkout of new branch and pop(apply and drop) last stash changes
 
 ### 11. Tagging - (mark significant event or milestones in the repo -- Tag are labels only that can be applied to any commit in history)
 - Creating and attach lightweight tag with Head commit: `git tag <tag_name>`
