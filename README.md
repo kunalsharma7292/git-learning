@@ -29,12 +29,12 @@
 ### 6. Check Status of repo/branch
 - List all changes in working directory/staging area, and info about local and remote repo : `git status`
 
-### 6. Committing Changes
+### 7. Committing Changes
 - Add all files/changes to staging area - (both tracked and untracked files) : `git add .`
 - Commiting Staged changes : `git commit -m "<Commit_Message>"`
 - Express commit for Tracked Files (no separate git add command is required to run) : `git commit -am "<Commit_Message>"`
 
-### 7. Pull and Push changes from/to remote repo
+### 8. Pull and Push changes from/to remote repo
 - Pull changes from a remote branch : `git pull origin <branch_name>`
 - Push changes of a local branch : `git push origin <branch_name>`
 - Push changes to a particular remote branch : `git push origin <local_branch>:<remote_branch>`
@@ -43,16 +43,16 @@
 > **Note :** if local branch is set to track remote repo branch - then we can directly use git pull and push commands without specifying origin refernce and branch name.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g.: If remote is set as upstream.  Use: `git pull`, `git push`
 
-### 8. Fetch new commits/branches/tags from remote repo and update references for remote-tracking branches(e.g., origin/main) but do not merge in changes in working directory
+### 9. Fetch new commits/branches/tags from remote repo and update references for remote-tracking branches(e.g., origin/main) but do not merge in changes in working directory
 - `git fetch origin <branch_name>`
 
 > **Note :** pull = fetch + merge (pull automatically merges remote changes in working directory directory)
 
-### 8. Discarding files or resetting changes from Staging area and working directory
+### 10. Discarding files or resetting changes from Staging area and working directory
 - Unstage changes from Staging area : `git reset HEAD <file_name>`
 - Discard changes from working directory : `git checkout -- <file_name>`
 
-### 9. Branch Commands
+### 11. Branch Commands
 - List local branches : `git branch`
 - List all branches (remote + local) : `git branch -a`
 - List remote branches : `git branch -r`
@@ -68,7 +68,7 @@
 - Set Remote branch as upstream branch for local branch (useful if both local and remote branch already exists)  
 `git branch --set-upstream-to=origin/<remote_branch_name> <local_branch>`
 
-### 10. Stashing - temporarily save changes and clean up working directory
+### 12. Stashing - temporarily save changes and clean up working directory
 - Save changes temporarily (staged and working directory changes) : `git stash`
 - Stash including untracked files : `git stash -u`
 - Stash with a message (can be used for tracking purposes) : `git stash save -m "<Message>"`
@@ -86,7 +86,7 @@
 `git stash branch <new_branch_name>`  
     - action performed by above command: create and checkout of new branch and pop(apply and drop) last stash changes
 
-### 11. Tagging - (mark significant event or milestones in the repo -- Tag are labels only that can be applied to any commit in history)
+### 13. Tagging - (mark significant event or milestones in the repo -- Tag are labels only that can be applied to any commit in history)
 - Creating and attach lightweight tag with Head commit: `git tag <tag_name>`
 - List all tags : `git tag --list`
 - Delete a tag : `git tag --delete <tag_name>`
@@ -116,7 +116,7 @@
     - corresponding commits/changes will not be removed from github
     - tag still present on local repo and can be pushed again 
 
-### 12. Rebasing  
+### 14. Rebasing  
 (Rewind current changes-commits -> apply commit of target branch on current branch and rewrite current branch commits)
 
 - Rebase changes of a branch on current branch : `git rebase <branch_name>`
@@ -124,7 +124,7 @@
 - Continue Rebase (used when conflicts have been resolved - if any present) - `git rebase --continue`
 - Pull with rebase : `git pull --rebase origin <branch_name>`
 
-### 13. Compare Changes
+### 15. Compare Changes
 - List differences b/w working directory and staging area code. (All changes will be listed)  
 `git diff`
 - List differences b/w working directory and last-commit / head : `git diff HEAD`
